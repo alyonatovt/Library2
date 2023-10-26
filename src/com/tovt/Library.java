@@ -11,17 +11,23 @@ public class Library {
         Book book3 = new Book("The Da Vinci Code", 2003, "Dan Brown ",230.0);
 
         Student student1= new Student("Alyona","Tovt",18,"KN-23");
-        Student student2= new Student("Vanessa","Yezerska",17,"KN-23");
-        Student student3 = new Student("Olesia","Myskiv",17,"KN-23");
+        Student student2= new Student("Vanessa","Yezerska",18,"KN-23");
+        Student student3 = new Student("Olesia","Myskiv",18,"KN-23");
 
 
         book1.infoBook();
         System.out.println("Ціна в онлайн магазині: " + " " + book1.priceInShop);
         author1.infoAuthor();
-        System.out.println("Кількість книжок написаних за все життя:" + " "+ author1.bookCount);
-        student2.infoStudent();
-        System.out.println("Вік студента:" + " " + student2.age);
+        System.out.println("Кількість книжок написаних за все життя:" + " "+ author1.getBookCount());
+        System.out.println("Інформація про студента групи:");
+        student3.infoStudent();
+        System.out.println("Інформація про студента:");
+        student1.infoStudent("Alyona","Tovt",18);
+
+
         }
+
     }
+
 
 
