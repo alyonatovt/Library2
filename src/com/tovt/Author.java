@@ -1,9 +1,9 @@
 package com.tovt;
 
 public class Author {
-    String name;
-    int age;
-    int bookCount;
+   private String name;
+   private int age;
+  private  int bookCount;
 
     public Author(String name, int age, int bookCount) {
         this.name = name;
@@ -18,5 +18,27 @@ public class Author {
     public int getBookCount() {
      return bookCount;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setBookCount(int bookCount) {
+        this.bookCount = bookCount;
+    }
 }
+
+
 
